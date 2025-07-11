@@ -14,16 +14,16 @@ And Select Battery Capacity
 Then It should display the Relevant result
 
 
-@tc003 @Regression
-Scenario: To validate the Faction Functionality
+@tc002 @Regression
+Scenario: To validate the Fashion Functionality
 
-Given User to move to the Faction link
+Given User to move to the Fashion link
 When Cursor to move to the kids link
 And Move to girls dress and click
 And Click the price high to low link
 Then It should display the relavent datails and get the title 
 
-@tc002 @Regression
+@tc003 @Regression
 Scenario Outline: To validate the search functionality with different values
 Given Enter the "<searchtext>" in the search field
 When click the search button

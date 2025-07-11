@@ -8,6 +8,7 @@ import org.testng.annotations.Listeners;
 import BrowserSetup.BaseClass;
 import keyword.Keywords;
 import listeners.MyListener;
+import propertyUtil.Property;
 
 @Listeners(MyListener.class)
 public class Fashion_page {
@@ -16,8 +17,18 @@ public class Fashion_page {
     public static By kidslink = By.xpath("//a[contains(text(),'Kids')]");
     public static By girlsDressLink = By.linkText("Girls Dresses");
     public static By priceLowToHigh = By.xpath("//div[text()='Price -- Low to High']");
-
+    public static By popup = By.xpath("//span[@role='button']");
+    
     public static void movefashionlink() throws InterruptedException {
+    	BaseClass.driver.get(Property.getProperty("url"));
+    	if (Keywords.isdisplayed(popup)) {
+    	    // Handle the popup
+    		Keywords.click(popup);
+    	    System.out.println("Popup handled!");
+    	} else {
+    	    System.out.println("No popup found.");
+    	}
+    	
         Keywords.waitTillVisible(fashionlink);
 
         WebElement fashion = Keywords.getElement(fashionlink); 

@@ -16,7 +16,7 @@ public class Multiplesearch{
 		BaseClass.driver.get(Property.getProperty("url"));
 		Keywords.getElement(Searchfield).clear();;
 		Keywords.log.info("Clearing and entering text: " + SearchText);
-	 Keywords.enterText(Searchfield, SearchText);    //Calls EnterValue() from SeleniumReusable to type the search text into the search bar.
+	 Keywords.enterText(Searchfield, SearchText);    
 
 
 	 }

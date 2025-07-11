@@ -1,16 +1,11 @@
 package com.StepDefinitions;
-
 import io.cucumber.java.en.*;
 import keyword.Keywords;
-
 import org.testng.Assert;
-
 import Pages.InvalidSearchPage;
 import Pages.Searchpage;
 
 public class InvalidSearchStepDef {
-
-  
 
     @Given ("User searches for {string}")
     public void search_for_invalid_product(String product) {

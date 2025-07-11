@@ -1,7 +1,4 @@
 package com.StepDefinitions;
-
-
-
 import Pages.Filter_page;
 import io.cucumber.java.en.Then;
 

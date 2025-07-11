@@ -1,8 +1,5 @@
 package com.StepDefinitions;
-
-
 import org.openqa.selenium.By;
-
 import Pages.Searchpage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

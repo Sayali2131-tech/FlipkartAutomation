@@ -8,7 +8,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(features="src/test/java/features",glue= {"com.StepDefinitions","hooks"},
                     plugin= {
                     		
-                    		 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},tags="@tc004")
+                    		 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},tags="@tc001")
 
 public class runner extends AbstractTestNGCucumberTests{
 
